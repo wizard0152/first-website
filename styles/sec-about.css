@@ -1,0 +1,34 @@
+
+.sec-about .container{
+	display: grid;
+	grid-template-columns: 0.8fr 1fr;
+	gap: 10%;
+}
+.sec-about__block{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.sec-about__preview{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sec-about__preview img{
+	position: absolute;
+	width: 100%; height: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+@media(max-width: 800px){
+	.sec-about .container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.sec-about .container{
+		gap: 5px;
+	}
+}
